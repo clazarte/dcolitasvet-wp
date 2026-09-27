@@ -75,9 +75,6 @@
                     <option value="">Seleccionar...</option>
                     <option value="dog">🐶 Perro</option>
                     <option value="cat">🐱 Gato</option>
-                    <option value="rabbit">🐰 Conejo</option>
-                    <option value="bird">🦜 Ave</option>
-                    <option value="other">Otro</option>
                   </select>
                 </div>
               </div>

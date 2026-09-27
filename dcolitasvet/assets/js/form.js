@@ -89,9 +89,6 @@
   const petTypeLabels = {
     dog: 'Perro',
     cat: 'Gato',
-    rabbit: 'Conejo',
-    bird: 'Ave',
-    other: 'Otro',
   };
 
   /* ── Construir el mensaje de WhatsApp ── */
