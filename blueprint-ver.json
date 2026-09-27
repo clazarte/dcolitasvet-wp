@@ -36,6 +36,11 @@
         {
             "step": "runPHP",
             "code": "<?php require '/wordpress/wp-load.php'; if ( function_exists( 'dcv_seed' ) ) { dcv_seed(); }"
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/mu-plugins/vista-previa.php",
+            "data": "<?php\n// Vista previa: la pagina se muestra como la ve un visitante, sin la barra de administrador.\nadd_filter( \"show_admin_bar\", \"__return_false\" );\n"
         }
     ]
 }
