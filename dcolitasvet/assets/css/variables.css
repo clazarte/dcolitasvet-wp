@@ -1,0 +1,123 @@
+/* ============================================
+   variables.css — Design tokens & custom props
+   D'Colitas Vet — VERSIÓN ALINEADA AL MANUAL DE MARCA
+
+   Fuente: MANUAL_DE_MARCA.pdf
+   - Sección 1.7 Colores Corporativos:
+       Pantone 716C  → #EF801A (naranja principal)
+       Pantone 717C  → #C95C16 (naranja secundario)
+       Pantone 3405C → #42AF71 (verde)
+   - Sección 1.8 Tipografía principal: KoniBlack + Cocogoose
+   - Sección 1.9 Tipografía secundaria: Work Sans
+   ============================================ */
+
+:root {
+  /* ── Colores de marca (Manual 1.7) ── */
+  --brand-orange:        #EF801A; /* Pantone 716C — principal */
+  --brand-orange-dark:   #C95C16; /* Pantone 717C — secundario */
+  --brand-green:         #42AF71; /* Pantone 3405C */
+  --brand-green-dark:    #338F5A; /* variante oscura del verde, derivada para hover/contraste */
+  --brand-green-light:   #EAF7EF; /* tinte muy claro del verde, para fondos suaves */
+  --brand-orange-alpha:  rgba(239, 128, 26, 0.15);
+  --brand-green-alpha:   rgba(66, 175, 113, 0.15);
+
+  /* ── Colores de soporte (no de marca, uso neutro) ── */
+  --color-cream:       #FDFAF5;
+  --color-charcoal:    #1A1A2E;
+  --color-charcoal-80: rgba(26, 26, 46, 0.8);
+  --color-charcoal-12: rgba(26, 26, 46, 0.12);
+  --color-charcoal-10: rgba(26, 26, 46, 0.10);
+  --color-warm-gray:   #6B6B6B;
+  --color-white:       #FFFFFF;
+  --color-whatsapp:    #25D366;
+
+  /* ── Alias retro-compatibles (mismo valor, distinto nombre) ──
+     Mantienen funcionando components.css / sections.css sin reescritura masiva,
+     ahora apuntando a los colores oficiales del manual. */
+  --color-mint:        var(--brand-green);
+  --color-mint-dark:   var(--brand-green-dark);
+  --color-mint-light:  var(--brand-green-light);
+  --color-mint-alpha:  var(--brand-green-alpha);
+  --color-accent:      var(--brand-orange);
+  --color-accent-dark: var(--brand-orange-dark);
+  --color-accent-alpha: var(--brand-orange-alpha);
+  /* ── Typography (Manual 1.8 / 1.9) ──
+     KoniBlack y Cocogoose son tipografías comerciales que no están
+     disponibles en Google Fonts. Se usan alternativas web de geometría
+     y peso muy cercanos, manteniendo el espíritu "bold/redondeado" del
+     manual hasta que el cliente provea los archivos de fuente con licencia.
+     Ver README.md → sección "Tipografías" para instrucciones de reemplazo. */
+  --font-display: 'Baloo 2', 'Poppins', sans-serif;   /* sustituto de KoniBlack/Cocogoose */
+  --font-body:    'Work Sans', system-ui, -apple-system, sans-serif; /* tipografía secundaria oficial */
+
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.825rem;   /* 13px */
+  --text-base: 0.9rem;     /* 14.4px */
+  --text-md:   1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  2rem;       /* 32px */
+  --text-4xl:  2.8rem;     /* ~45px */
+  --text-hero: clamp(2.8rem, 5vw, 4.2rem);
+
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+  --weight-black:   800; /* Baloo 2 tops out at 800 */
+
+  --leading-tight:  1.1;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.7;
+
+  --tracking-wide:  0.02em;
+  --tracking-wider: 0.08em;
+  --tracking-caps:  0.12em;
+
+  /* ── Spacing ── */
+  --space-1:  0.25rem;   /* 4px  */
+  --space-2:  0.5rem;    /* 8px  */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-28: 7rem;      /* 112px */
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --section-padding-x: 5%;
+  --section-padding-y: var(--space-28);
+
+  /* ── Borders & Radius ── */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm:    0 4px 15px rgba(0, 0, 0, 0.07);
+  --shadow-md:    0 10px 40px rgba(0, 0, 0, 0.10);
+  --shadow-lg:    0 20px 60px rgba(0, 0, 0, 0.14);
+  --shadow-xl:    0 30px 80px rgba(0, 0, 0, 0.18);
+  --shadow-mint:  0 8px 25px rgba(66, 175, 113, 0.35);
+  --shadow-mint-lg: 0 12px 35px rgba(66, 175, 113, 0.45);
+  --shadow-wa:    0 8px 30px rgba(37, 211, 102, 0.5);
+
+  /* ── Transitions ── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ── Z-index ── */
+  --z-float:    10;
+  --z-nav:      100;
+  --z-wa:       200;
+}

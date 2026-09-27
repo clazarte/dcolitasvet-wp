@@ -1,0 +1,96 @@
+/* ============================================
+   base.css — Body, typography, global defaults
+   D'Colitas Vet
+   ============================================ */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: var(--weight-regular);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+}
+
+/* ── Headings (Manual de Marca: KoniBlack/Cocogoose siempre en mayúsculas) ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: var(--leading-tight);
+  color: var(--color-charcoal);
+}
+
+h1 {
+  font-size: var(--text-hero);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+}
+h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+}
+h3 { font-size: var(--text-xl); font-weight: var(--weight-bold); }
+h4 { font-size: var(--text-lg); font-weight: var(--weight-semibold); }
+
+/* ── Body text ── */
+p {
+  line-height: var(--leading-relaxed);
+  color: var(--color-warm-gray);
+}
+
+/* ── Eyebrow label ── */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-mint);
+  margin-bottom: var(--space-4);
+  display: block;
+}
+
+.eyebrow--light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Section text variants ── */
+.section__title--light {
+  color: var(--color-white);
+}
+
+.section__sub {
+  font-size: var(--text-md);
+  color: var(--color-warm-gray);
+  line-height: var(--leading-relaxed);
+  max-width: 520px;
+}
+
+.section__sub--light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Accessibility: skip to main ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  background: var(--color-mint);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  z-index: calc(var(--z-nav) + 10);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+  transition: top var(--transition-fast);
+}
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* ── Focus ring ── */
+:focus-visible {
+  outline: 3px solid var(--color-mint);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}

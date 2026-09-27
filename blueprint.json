@@ -1,0 +1,41 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "D'Colitas Vet",
+    "description": "Tema de WordPress de D'Colitas Vet con contenido de ejemplo.",
+    "author": "clazarte"
+  },
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "D'Colitas Vet",
+        "blogdescription": "Clínica Veterinaria en San Luis, Lima"
+      }
+    },
+    {
+      "step": "setSiteLanguage",
+      "language": "es_ES"
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/clazarte/dcolitasvet-wp/main/dcolitasvet.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; if ( function_exists( 'dcv_seed' ) ) { dcv_seed(); }"
+    }
+  ]
+}
