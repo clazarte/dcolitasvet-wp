@@ -96,7 +96,7 @@
     const petType = petTypeLabels[data.petType] || data.petType;
     const service  = data.service;
 
-    let msg = `Hola! Quiero agendar una cita en D'Colitas Vet 🐾\n\n`;
+    let msg = `Hola! Quiero agendar una cita en D'Colitas Vet\n\n`;
     msg += `*Nombre:* ${data.name}\n`;
     msg += `*Teléfono:* ${data.phone}\n`;
     msg += `*Mascota:* ${data.petName} (${petType})\n`;

@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'DCV_VERSION', '1.0.1' );
+define( 'DCV_VERSION', '1.0.2' );
 define( 'DCV_DIR', get_template_directory() );
 define( 'DCV_URI', get_template_directory_uri() );
 
