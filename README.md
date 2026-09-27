@@ -1,9 +1,12 @@
 # D'Colitas Vet — Tema de WordPress
 
-**Demo en vivo (WordPress Playground):**
+**Vista previa (como la ve un visitante):**
+https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/clazarte/dcolitasvet-wp/main/blueprint-ver.json
+
+**Demo con panel de administración:**
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/clazarte/dcolitasvet-wp/main/blueprint.json
 
-La demo se abre con la sesión de administrador iniciada (menú **Servicios**, **Equipo**, **Testimonios** y **Apariencia → Personalizar**). Es temporal: los cambios no se guardan al cerrar la pestaña.
+La demo con panel se abre con la sesión de administrador iniciada (menú **Servicios**, **Equipo**, **Testimonios** y **Apariencia → Personalizar**). Ambas son temporales: los cambios no se guardan al cerrar la pestaña.
 
 ## Instalar
 
