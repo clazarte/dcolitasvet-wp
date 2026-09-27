@@ -25,7 +25,7 @@ function dcv_defaults() {
 		'address_line2'    => 'San Luis, Lima, Perú',
 		'phone_display'    => '+51 912 865 712',
 		'whatsapp_number'  => '51912865712',
-		'whatsapp_message' => "Hola! Quiero agendar una cita en D'Colitas Vet",
+		'whatsapp_message' => "Hola! Quiero agendar una cita en D'Colitas Vet 🐾",
 		'schedule'         => 'Lunes a Domingo · 9:30am – 6pm',
 		'instagram_user'   => '@dcolitasvet',
 		'instagram_url'    => 'https://www.instagram.com/dcolitasvet',
