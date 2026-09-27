@@ -16,8 +16,9 @@
 
   if (!phone) return;
 
-  const baseUrl = 'https://wa.me/' + phone;
-  const fullUrl = baseUrl + '?text=' + encodeURIComponent(message);
+  /* api.whatsapp.com conserva los emojis del mensaje (wa.me los estropea) */
+  const baseUrl = 'https://api.whatsapp.com/send?phone=' + phone;
+  const fullUrl = baseUrl + '&text=' + encodeURIComponent(message);
 
   const heroBtn  = document.getElementById('heroWaBtn');
   const floatBtn = document.getElementById('waFloatBtn');

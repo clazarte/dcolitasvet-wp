@@ -132,7 +132,8 @@
 
     const phone   = config.phone || '51912865712';
     const text    = buildWhatsAppMessage(data);
-    const waUrl   = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    /* api.whatsapp.com conserva los emojis del mensaje (wa.me los estropea) */
+    const waUrl   = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(text)}`;
 
     /* Pequeño delay para mostrar el estado de carga antes de redirigir */
     setTimeout(function () {
