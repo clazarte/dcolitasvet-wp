@@ -99,8 +99,8 @@ function dcv_seed_content() {
 			array( 'Internamientos', '🛏️', 'Hospitalización con monitoreo continuo las 24 horas. Tu mascota recibe los cuidados intensivos que necesita en un ambiente seguro.' ),
 		),
 		'dcv_miembro'    => array(
-			array( 'Dra. Ugarte', 'Médico Veterinario', "Médico Veterinario y Zootecnista\nEspecialización en Medicina Interna\nCurso de Anestesiología Veterinaria", 'dra-ugarte.jpeg' ),
-			array( 'Dr. Huaman', 'Médico Veterinario', "Médico Veterinario y Zootecnista\nEspecialización en Cirugía de Tejidos Blandos\nMás de 10 años de experiencia clínica", 'dr-huaman.jpeg' ),
+			array( 'Dra. Gabriela Ugarte', 'Médico Veterinario', "Médico veterinario zootecnista\nEspecialidad en neonatología\nEspecialidad en medicina felina", 'dra-ugarte.jpeg' ),
+			array( 'Dr. Henry Huamán', 'Médico Veterinario', "Médico veterinario zootecnista\nMedicina Clínica\nEspecialidad en cirugías de tejidos blandos\nEspecialidad en Ecografía", 'dr-huaman.jpeg' ),
 		),
 		'dcv_testimonio' => array(
 			array( 'Kelly Renquifo', '🐶 Mamá de Mophy y Loky', 'Conocí al Dr. Henry, Dra. Gaby y Dra. Rossy por recomendación y desde la primera consulta quedé impresionada. La atención hacia mis poodles fue excelente, muy profesional y con mucho cariño. Se nota el amor genuino que tienen por lo que hacen. Además, admiro el compromiso del equipo con los animales abandonados. ¡Súper recomendado!' ),
